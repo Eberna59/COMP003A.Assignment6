@@ -4,7 +4,7 @@ using System.Text;
 
 namespace COMP003A.Assignment6
 {
-    internal class book
+    internal class Book
     {
         public string Title;
 
@@ -13,7 +13,7 @@ namespace COMP003A.Assignment6
         public bool Completed;
 
 
-        public book(string title, int pages, bool completed)
+        public Book(string title, int pages, bool completed)
         {
             Title = title;
             Pages = pages;
@@ -25,6 +25,11 @@ namespace COMP003A.Assignment6
             Console.WriteLine("Title: " + Title);
             Console.WriteLine("Pages: " + Pages);
             Console.WriteLine("Completed: " + Completed);
+        }
+        
+        public void MarkComplete()
+        {
+            Completed = true;
         }
 
 
