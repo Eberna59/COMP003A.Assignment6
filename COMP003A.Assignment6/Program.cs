@@ -18,6 +18,23 @@
                 Console.Write("Enter Choice: ");
 
                 string choice = Console.ReadLine();
+
+                switch (choice)
+                {
+                    case "1":
+                        Console.WriteLine("\nBook 1:");
+                        book1.DisplayBook();
+
+                        Console.WriteLine("\nBook 2:");
+                        book2.DisplayBook();
+
+                        Console.WriteLine("\nBook 3:");
+                        book3.DisplayBook();
+                        break;
+
+                    case "2":
+
+                }
             }
         }
     }
