@@ -33,6 +33,27 @@
                         break;
 
                     case "2":
+                        Console.Write("Select book (1-3): ");
+                        string selection = Console.ReadLine();
+
+                        switch (selection)
+                        {
+                            case "1":
+                                book1.MarkComplete();
+                                Console.WriteLine("Updated Book 1.");
+                                break;
+
+                            case "2":
+                                book2.MarkComplete();
+                                Console.WriteLine("Updated Book 2.");
+                                break;
+
+                            case "3":
+                                book3.MarkComplete();
+                                Console.WriteLine("Updated Book 3.");
+                                break;
+                        }break;
+
 
                 }
             }
